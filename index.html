@@ -35,7 +35,7 @@
             </ul>
     </nav>
   
-    <main>
+    <main id="main">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
@@ -254,22 +254,22 @@
               <form> 
                   <fieldset>
                     <label for="first">First Name<span class="required">*</span></label>
-                    <input id="first" name="first" type="text" autocomplete="name" aria-required="true">
+                    <input id="first" name="first" type="text" autocomplete="name" required>
                 
                     <label for="last">Last Name<span class="required">*</span></label>
-                    <input id="last" name="last" type="text" autocomplete="name" aria-required="true">
+                    <input id="last" name="last" type="text" autocomplete="name" required>
 
                     <label for="email">Email<span class="required">*</span></label>
-                    <input id="email" name="email" type="email" autocomplete="email" aria-required="true">
+                    <input id="email" name="email" type="email" autocomplete="email" required>
                   
                     <label for="phone">Phone<span class="required">*</span></label>
-                    <input id="phone" name="phone" type="tel" autocomplete="tel" aria-required="true">
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" required>
                 </fieldset>
               
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span class="required">*</span></legend>
                       <div>
-                        <input id="contact-email" type="radio" name="contact" value="email" aria-required="true">
+                        <input id="contact-email" type="radio" name="contact" value="email" required>
             						<label for="contact-email">Email</label>
                       </div>
                       <div>
@@ -283,9 +283,9 @@
                 </fieldset>
                   
                 <fieldset id="destination">
-                    <legend>Destination<span class="required">*</span></legend>
-                    <select id="select-destination">
-                        <option>Choose</option>
+                    <label for="select-destination">Choose your destination</label>
+                    <select id="select-destination" name="destination" required>
+                        <option value="" disabled selected>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
                         <option>Ibiza</option>
@@ -299,9 +299,9 @@
                 </fieldset>
           
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
-                        <option>Choose</option>
+                  <label for="select-travel-time">Select travel time</label>
+                  <select id="select-travel-time" name="travel-time" required>
+                        <option value="" disabled selected>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
                         <option>Spring</option>
@@ -309,7 +309,7 @@
                         <option>Flexible</option>
                   </select>
                 </fieldset>
-                <button type="submit">Send</button>
+                <input id="submit" type="submit" value="Send">
               </form>
         </section>
         <section id="legal">

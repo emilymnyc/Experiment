@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderlust Travel- Destination Majorca</title>
-    <link rel="stylesheet" href="style.css">
 </head>
   
   <a href="#main" class="sr-only">Skip to main content</a>
@@ -271,14 +270,18 @@
               
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span class="required">*</span></legend>
+                      <div>
                         <input id="contact-email" type="radio" name="contact" value="email" aria-required="true">
             						<label for="contact-email">Email</label>
-
+                      </div>
+                      <div>
                         <input id="contact-text" type="radio" name="contact" value="text">
                         <label for="contact-text">Text</label>
-      
+                      </div>
+                      <div>
                         <input id="contact-phone" type="radio" name="contact" value="phone">
             						<label for="contact-phone">Phone</label>
+                      </div>
                 </fieldset>
                   
                 <fieldset id="destination">
@@ -308,9 +311,8 @@
                         <option>Flexible</option>
                   </select>
                 </fieldset>
-                </form>
                 <button type="submit">Send</button>
-              
+              </form>
         </section>
         <section id="legal">
             <h2>Legal</h2>
